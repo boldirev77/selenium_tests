@@ -13,7 +13,7 @@ from selenium.webdriver.support import expected_conditions
 import unittest
 
 
-class CompareProducts(unittest.TestCase):
+class AlertTest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.get('http://the-internet.herokuapp.com/')

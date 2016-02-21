@@ -1,2 +1,4 @@
 # selenium_tests
-Example of selenium tests, Html report, Test suit
+Examples of selenium tests, HTML report, Test suit
+
+run ch_2_boatoftests_html_report.py to execute a bunch of existing tests

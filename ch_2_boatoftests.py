@@ -6,8 +6,8 @@
 '''
 
 import unittest
-from searching_class_methods import SearchTests
-from german_version import GermanLangTest
+from ch_2_searching_class_methods import SearchTests
+from ch_2_german_version import GermanLangTest
 
 # get all tests from SearchProductTest and HomePageTest class
 search_tests = unittest.TestLoader().loadTestsFromTestCase(SearchTests)

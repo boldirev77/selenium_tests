@@ -19,8 +19,7 @@ class DiffSelectors(unittest.TestCase):
         cls.driver.maximize_window()
 
         # navigate to the application home page
-        cls.driver.get(''
-                       '')
+        cls.driver.get('http://demostore.x-cart.com')
 
     def test1_search_field_max_length(self):
         # get the search textbox

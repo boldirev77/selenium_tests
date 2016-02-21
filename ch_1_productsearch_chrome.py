@@ -7,7 +7,7 @@
 import os
 from selenium import webdriver
 
-# get the path of IEDriverServer
+# get the path of ChromeDriver
 dir = os.path.dirname(__file__)
 chrome_driver_path = dir + "\chromedriver.exe"
 

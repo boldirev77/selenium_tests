@@ -6,11 +6,12 @@
 """
 from selenium import webdriver
 import unittest
-import time
+import os
 
 class RegisterNewUser(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        chrome_driver_path = os.path.dirname(__file__) + "\chromedriver.exe"
+        self.driver = webdriver.Chrome(chrome_driver_path)
         self.driver.implicitly_wait(30)
         self.driver.maximize_window()
 
@@ -51,7 +52,7 @@ class RegisterNewUser(unittest.TestCase):
         delete_button.click()
         # time.sleep(5)
         delete_confirm = self.driver.find_element_by_xpath(
-                '//div[@class="delete-user-buttons-list"]/button[@type="submit"]')
+                "//div[@class='delete-user-buttons-list']/button[@type='submit']")
         delete_confirm.click()
         # time.sleep(5)
         # check that we return to the home page
