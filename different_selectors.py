@@ -2,6 +2,7 @@
     File name : different_selectors
     Author : Aleksander Boldyrev
     Python Version: 3.4
+    ch_3
 '''
 
 import unittest
@@ -18,7 +19,8 @@ class DiffSelectors(unittest.TestCase):
         cls.driver.maximize_window()
 
         # navigate to the application home page
-        cls.driver.get('http://demostore.x-cart.com')
+        cls.driver.get(''
+                       '')
 
     def test1_search_field_max_length(self):
         # get the search textbox

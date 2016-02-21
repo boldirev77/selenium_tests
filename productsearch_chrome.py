@@ -1,14 +1,19 @@
 '''
     File name: 
     Author: Aleksander Boldyrev
-    Python Version: 3.4
+    Python Version: 3.
+    ch_1
 '''
-
+import os
 from selenium import webdriver
 
+# get the path of IEDriverServer
+dir = os.path.dirname(__file__)
+chrome_driver_path = dir + "\chromedriver.exe"
+
 # create a new Firefox session
-driver = webdriver.Firefox()
-driver.implicitly_wait(20)
+driver = webdriver.Chrome(executable_path=chrome_driver_path)
+driver.implicitly_wait(30)
 driver.maximize_window()
 
 # navigate to the application home page
@@ -19,7 +24,7 @@ search_field = driver.find_element_by_id('substring-default')
 search_field.clear()
 
 # enter search keyword and submit
-search_field.send_keys('robot')
+search_field.send_keys('toys')
 search_field.submit()
 
 # get all the anchor elements which have product names displayed

@@ -2,17 +2,14 @@
     File name: 
     Author: Aleksander Boldyrev
     Python Version: 3.4
+    ch_1
 '''
 
 from selenium import webdriver
 
-# get the path of IEDriverServer
-
-Edge_driver_path = "d:\Selenium" + "\mswd\MicrosoftWebDriver.exe"
-
 # create a new Firefox session
-driver = webdriver.Edge(Edge_driver_path)
-driver.implicitly_wait(30)
+driver = webdriver.Firefox()
+driver.implicitly_wait(20)
 driver.maximize_window()
 
 # navigate to the application home page
